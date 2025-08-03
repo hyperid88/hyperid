@@ -205,7 +205,7 @@
   function hitungTotal() {
     const jenis = jenisTransaksi.value.toLowerCase();
     const nominal = parseNominal(nominalInput.value);
-    let bunga = jenis.includes('dollar') ? 0.10 : 0.15;
+    let bunga = jenis.includes('dollar') ? 0.15 : 0.15;
 
     if (nominal > 0) {
       const total = nominal + (nominal * bunga);
@@ -255,3 +255,4 @@
 
 </body>
 </html>
+
